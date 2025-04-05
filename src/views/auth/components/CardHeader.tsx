@@ -1,8 +1,12 @@
-import React from "react";
 import Logo from "./Logo";
 import HeaderInfo from "./HeaderInfo";
 
-const CardHeader = ({ title, subtitle }) => {
+type CardHeaderProps = {
+  title: string;
+  subtitle: string;
+};
+
+const CardHeader = ({ title, subtitle }: CardHeaderProps) => {
   return (
     <div className="flex flex-col items-center space-y-4">
       <Logo />

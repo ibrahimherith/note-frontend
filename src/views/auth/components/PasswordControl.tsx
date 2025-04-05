@@ -1,7 +1,13 @@
 import React from "react";
 import { Eye } from "lucide-react";
 
-const PasswordControl = ({ name, value, onChange }) => {
+type PasswordControlProps = {
+  name: string;
+  value: string | number | undefined;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const PasswordControl = ({ name, value, onChange }: PasswordControlProps) => {
   return (
     <div>
       <label

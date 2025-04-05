@@ -1,6 +1,10 @@
-import React from "react";
+type CardFooterProps = {
+  info: string;
+  link: string;
+  linkinfo: string;
+};
 
-const CardFooter = ({ info, link, linkinfo }) => {
+const CardFooter = ({ info, link, linkinfo }: CardFooterProps) => {
   return (
     <div className="w-full space-y-4">
       <hr className="border-gray-200" />
